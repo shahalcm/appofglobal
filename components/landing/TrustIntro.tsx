@@ -46,12 +46,12 @@ export default function TrustIntro() {
           {introPillars.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 hover:border-[#0B4DFF]/30 group"
+              className="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 hover:border-primary/30 group"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#EAF4FF] text-[#0B4DFF] group-hover:bg-[#0B4DFF] group-hover:text-white transition-colors flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-xl bg-accent text-primary group-hover:bg-primary group-hover:text-white transition-colors flex items-center justify-center mb-6">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-bold text-[#0A1A44] mb-3 group-hover:text-[#0B4DFF] transition-colors">
+              <h3 className="text-xl font-bold text-dark-blue mb-3 group-hover:text-primary transition-colors">
                 {item.title}
               </h3>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base">

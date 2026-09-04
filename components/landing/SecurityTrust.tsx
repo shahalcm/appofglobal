@@ -39,21 +39,21 @@ export default function SecurityTrust() {
           {SECURITY_CARDS.map((card, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all duration-300 hover:border-[#0B4DFF]/30 group flex flex-col justify-between"
+              className="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all duration-300 hover:border-primary/30 group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-[#EAF4FF] text-[#0B4DFF] group-hover:bg-[#0B4DFF] group-hover:text-white transition-colors flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-accent text-primary group-hover:bg-primary group-hover:text-white transition-colors flex items-center justify-center">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {getSecurityIcon(idx)}
                     </svg>
                   </div>
-                  <span className="text-[10px] font-bold text-[#0B4DFF] bg-[#EAF4FF] px-2 py-0.5 rounded border border-[#0B4DFF]/15">
+                  <span className="text-[10px] font-bold text-primary bg-accent px-2 py-0.5 rounded border border-primary/15">
                     {card.tag}
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#0A1A44] mb-2 group-hover:text-[#0B4DFF] transition-colors">
+                <h3 className="text-lg font-bold text-dark-blue mb-2 group-hover:text-primary transition-colors">
                   {card.title}
                 </h3>
 

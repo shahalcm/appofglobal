@@ -32,7 +32,7 @@ export default function FAQ() {
                 key={index}
                 className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
                   isOpen
-                    ? "bg-[#EAF4FF]/40 border-[#0B4DFF]/30 shadow-sm"
+                    ? "bg-accent/40 border-primary/30 shadow-sm"
                     : "bg-white border-slate-200/80 hover:border-slate-300"
                 }`}
               >
@@ -41,15 +41,15 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                   aria-controls={contentId}
                   onClick={() => toggleFAQ(index)}
-                  className="w-full text-left px-6 py-5 sm:py-6 flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0B4DFF] rounded-2xl cursor-pointer"
+                  className="w-full text-left px-6 py-5 sm:py-6 flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-2xl cursor-pointer"
                 >
-                  <span className="text-base sm:text-lg font-bold text-[#0A1A44]">
+                  <span className="text-base sm:text-lg font-bold text-dark-blue">
                     {item.question}
                   </span>
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
                       isOpen
-                        ? "bg-[#0B4DFF] text-white rotate-180"
+                        ? "bg-primary text-white rotate-180"
                         : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                     }`}
                   >

@@ -29,7 +29,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     <div className="fixed inset-0 z-50 lg:hidden">
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-[#0A1A44]/60 backdrop-blur-sm transition-opacity"
+        className="fixed inset-0 bg-dark-blue/60 backdrop-blur-sm transition-opacity"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -47,13 +47,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 className="object-contain"
               />
             </div>
-            <span className="font-extrabold text-[#0A1A44] tracking-tight">
+            <span className="font-extrabold text-dark-blue tracking-tight">
               UBS GLOBAL
             </span>
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-lg text-slate-500 hover:text-[#0A1A44] hover:bg-slate-100 transition-colors"
+            className="p-2 rounded-lg text-slate-500 hover:text-dark-blue hover:bg-slate-100 transition-colors"
             aria-label="Close menu"
           >
             <svg
@@ -79,7 +79,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               key={link.href}
               href={link.href}
               onClick={onClose}
-              className="px-4 py-3 text-base font-medium text-[#0A1A44] hover:text-[#0B4DFF] hover:bg-[#EAF4FF] rounded-xl transition-all"
+              className="px-4 py-3 text-base font-medium text-dark-blue hover:text-primary hover:bg-accent rounded-xl transition-all"
             >
               {link.label}
             </a>

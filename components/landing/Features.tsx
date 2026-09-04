@@ -48,7 +48,7 @@ export default function Features() {
 
   return (
     <section id="features" className="py-20 sm:py-28 bg-white relative">
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#EAF4FF]/60 blur-3xl rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-accent/60 blur-3xl rounded-full pointer-events-none -z-10" />
 
       <Container>
         <SectionHeading
@@ -61,23 +61,23 @@ export default function Features() {
           {APP_FEATURES.map((feature) => (
             <div
               key={feature.id}
-              className="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-[#0B4DFF]/30 flex flex-col justify-between group"
+              className="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 flex flex-col justify-between group"
             >
               <div>
                 {/* Header Icon + Number */}
                 <div className="flex items-center justify-between mb-5">
-                  <div className="w-12 h-12 rounded-xl bg-[#EAF4FF] text-[#0B4DFF] group-hover:bg-[#0B4DFF] group-hover:text-white transition-all duration-300 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-accent text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 flex items-center justify-center">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {getFeatureIcon(feature.iconName)}
                     </svg>
                   </div>
-                  <span className="text-xs font-semibold text-[#0B4DFF] bg-[#EAF4FF] px-2.5 py-1 rounded-full border border-[#0B4DFF]/15">
+                  <span className="text-xs font-semibold text-primary bg-accent px-2.5 py-1 rounded-full border border-primary/15">
                     {feature.badge}
                   </span>
                 </div>
 
                 {/* Title & Description */}
-                <h3 className="text-xl font-bold text-[#0A1A44] mb-2.5 group-hover:text-[#0B4DFF] transition-colors">
+                <h3 className="text-xl font-bold text-dark-blue mb-2.5 group-hover:text-primary transition-colors">
                   {feature.title}
                 </h3>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -86,7 +86,7 @@ export default function Features() {
               </div>
 
               {/* Bottom Feature Micro Link / Indicator */}
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-[#0B4DFF] group-hover:text-[#083ecd]">
+              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-primary group-hover:text-primary-hover">
                 <span>Explore in UBS Global app</span>
                 <svg className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

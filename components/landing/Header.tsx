@@ -53,7 +53,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="px-3 py-1.5 text-sm font-medium text-[#0A1A44]/80 hover:text-[#0B4DFF] hover:bg-[#EAF4FF]/60 rounded-lg transition-all"
+                className="px-3 py-1.5 text-sm font-medium text-dark-blue/80 hover:text-primary hover:bg-accent/60 rounded-lg transition-all"
               >
                 {link.label}
               </a>
@@ -75,7 +75,7 @@ export default function Header() {
             {/* Mobile menu toggle */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden p-2 rounded-xl text-[#0A1A44] hover:bg-[#EAF4FF] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0B4DFF]"
+              className="lg:hidden p-2 rounded-xl text-dark-blue hover:bg-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               aria-label="Open mobile navigation menu"
             >
               <svg

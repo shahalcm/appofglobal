@@ -43,15 +43,15 @@ export default function WhyChoose() {
           {WHY_CHOOSE_ITEMS.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 group hover:border-[#0B4DFF]/30"
+              className="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 group hover:border-primary/30"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#EAF4FF] text-[#0B4DFF] group-hover:bg-[#0B4DFF] group-hover:text-white transition-colors flex items-center justify-center mb-5">
+              <div className="w-12 h-12 rounded-xl bg-accent text-primary group-hover:bg-primary group-hover:text-white transition-colors flex items-center justify-center mb-5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   {getItemIcon(idx)}
                 </svg>
               </div>
 
-              <h3 className="text-lg font-bold text-[#0A1A44] mb-2 group-hover:text-[#0B4DFF] transition-colors tracking-wide">
+              <h3 className="text-lg font-bold text-dark-blue mb-2 group-hover:text-primary transition-colors tracking-wide">
                 {item.title}
               </h3>
 

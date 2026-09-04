@@ -9,7 +9,7 @@ export default function Footer() {
   const currentYear = 2026;
 
   return (
-    <footer className="bg-[#050D24] text-slate-300 border-t border-slate-800/80 pt-16 pb-12">
+    <footer className="bg-brand-navy text-slate-300 border-t border-slate-800/80 pt-16 pb-12">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-slate-800">
           {/* Brand Info */}

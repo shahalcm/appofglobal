@@ -13,8 +13,8 @@ export default function GlobalTrade() {
   return (
     <section className="py-24 sm:py-32 bg-dark-mesh relative overflow-hidden text-white">
       {/* Background Decorative Rings */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full border border-blue-500/10 pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[950px] h-[950px] rounded-full border border-blue-500/5 pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-175 rounded-full border border-blue-500/10 pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-237.5 h-237.5 rounded-full border border-blue-500/5 pointer-events-none" />
 
       <Container className="relative z-10">
         <SectionHeading
@@ -27,7 +27,7 @@ export default function GlobalTrade() {
         {/* World Map & Connection Graphic Container */}
         <div className="relative mt-8 rounded-3xl bg-[#0F2154]/60 border border-blue-400/20 backdrop-blur-xl p-8 sm:p-12 shadow-2xl overflow-hidden">
           {/* Stylized World Map Silhouette SVG */}
-          <div className="relative w-full aspect-[2/1] min-h-[300px] sm:min-h-[420px] flex items-center justify-center">
+          <div className="relative w-full aspect-2/1 min-h-75 sm:min-h-105 flex items-center justify-center">
             <svg
               viewBox="0 0 1000 500"
               fill="none"
@@ -117,10 +117,10 @@ export default function GlobalTrade() {
             {/* Glowing Trade Node Badges */}
             <div className="absolute top-1/4 left-[20%] sm:left-[22%] -translate-x-1/2 flex flex-col items-center group">
               <span className="relative flex h-4 w-4">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1DA1FF] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-4 w-4 bg-[#0B4DFF] border-2 border-white shadow-lg"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-4 w-4 bg-primary border-2 border-white shadow-lg"></span>
               </span>
-              <span className="mt-2 text-[10px] sm:text-xs font-bold text-white bg-[#0A1A44]/90 px-2.5 py-1 rounded-full border border-blue-400/30 whitespace-nowrap shadow-md">
+              <span className="mt-2 text-[10px] sm:text-xs font-bold text-white bg-dark-blue/90 px-2.5 py-1 rounded-full border border-blue-400/30 whitespace-nowrap shadow-md">
                 North America Market
               </span>
             </div>
@@ -128,19 +128,19 @@ export default function GlobalTrade() {
             <div className="absolute top-[28%] left-[48%] -translate-x-1/2 flex flex-col items-center group">
               <span className="relative flex h-4 w-4">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00D2FF] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-4 w-4 bg-[#1DA1FF] border-2 border-white shadow-lg"></span>
+                <span className="relative inline-flex rounded-full h-4 w-4 bg-secondary border-2 border-white shadow-lg"></span>
               </span>
-              <span className="mt-2 text-[10px] sm:text-xs font-bold text-white bg-[#0A1A44]/90 px-2.5 py-1 rounded-full border border-blue-400/30 whitespace-nowrap shadow-md">
+              <span className="mt-2 text-[10px] sm:text-xs font-bold text-white bg-dark-blue/90 px-2.5 py-1 rounded-full border border-blue-400/30 whitespace-nowrap shadow-md">
                 Europe Hub
               </span>
             </div>
 
             <div className="absolute top-[38%] left-[61%] -translate-x-1/2 flex flex-col items-center group">
               <span className="relative flex h-4 w-4">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1DA1FF] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-4 w-4 bg-[#0B4DFF] border-2 border-white shadow-lg"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-4 w-4 bg-primary border-2 border-white shadow-lg"></span>
               </span>
-              <span className="mt-2 text-[10px] sm:text-xs font-bold text-white bg-[#0A1A44]/90 px-2.5 py-1 rounded-full border border-blue-400/30 whitespace-nowrap shadow-md">
+              <span className="mt-2 text-[10px] sm:text-xs font-bold text-white bg-dark-blue/90 px-2.5 py-1 rounded-full border border-blue-400/30 whitespace-nowrap shadow-md">
                 Middle East Corridor
               </span>
             </div>
@@ -148,9 +148,9 @@ export default function GlobalTrade() {
             <div className="absolute top-[44%] left-[76%] -translate-x-1/2 flex flex-col items-center group">
               <span className="relative flex h-4 w-4">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00D2FF] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-4 w-4 bg-[#1DA1FF] border-2 border-white shadow-lg"></span>
+                <span className="relative inline-flex rounded-full h-4 w-4 bg-secondary border-2 border-white shadow-lg"></span>
               </span>
-              <span className="mt-2 text-[10px] sm:text-xs font-bold text-white bg-[#0A1A44]/90 px-2.5 py-1 rounded-full border border-blue-400/30 whitespace-nowrap shadow-md">
+              <span className="mt-2 text-[10px] sm:text-xs font-bold text-white bg-dark-blue/90 px-2.5 py-1 rounded-full border border-blue-400/30 whitespace-nowrap shadow-md">
                 Asia Pacific Markets
               </span>
             </div>
@@ -163,7 +163,7 @@ export default function GlobalTrade() {
                 key={idx}
                 className="bg-white/5 rounded-xl p-4 border border-white/10 backdrop-blur-sm"
               >
-                <div className="text-xs font-bold text-[#1DA1FF] uppercase tracking-wider mb-1">
+                <div className="text-xs font-bold text-secondary uppercase tracking-wider mb-1">
                   {hub.title}
                 </div>
                 <div className="text-xs text-blue-100/75 leading-relaxed">

@@ -38,31 +38,31 @@ export default function HowItWorks() {
         {/* 4-Step Process Grid with Progress Line */}
         <div className="relative">
           {/* Connecting Line on Desktop */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-[#0B4DFF]/10 via-[#1DA1FF]/40 to-[#0B4DFF]/10 -translate-y-16 -z-0" />
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-linear-to-r from-primary/10 via-secondary/40 to-primary/10 -translate-y-16 z-0" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
             {HOW_IT_WORKS_STEPS.map((item, idx) => (
               <div
                 key={item.step}
-                className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group hover:-translate-y-1 hover:border-[#0B4DFF]/30"
+                className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group hover:-translate-y-1 hover:border-primary/30"
               >
                 {/* Step badge & circle */}
                 <div className="relative mb-6">
-                  <div className="w-16 h-16 rounded-2xl bg-[#EAF4FF] text-[#0B4DFF] flex items-center justify-center group-hover:bg-[#0B4DFF] group-hover:text-white transition-colors duration-300 shadow-sm">
+                  <div className="w-16 h-16 rounded-2xl bg-accent text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-sm">
                     <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {getStepIcon(idx)}
                     </svg>
                   </div>
-                  <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#0A1A44] text-white text-[11px] font-extrabold flex items-center justify-center border-2 border-white">
+                  <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-dark-blue text-white text-[11px] font-extrabold flex items-center justify-center border-2 border-white">
                     {idx + 1}
                   </span>
                 </div>
 
-                <div className="inline-block px-2.5 py-0.5 rounded text-[11px] font-semibold text-[#0B4DFF] bg-[#EAF4FF] mb-3">
+                <div className="inline-block px-2.5 py-0.5 rounded text-[11px] font-semibold text-primary bg-accent mb-3">
                   {item.highlight}
                 </div>
 
-                <h3 className="text-xl font-bold text-[#0A1A44] mb-3">
+                <h3 className="text-xl font-bold text-dark-blue mb-3">
                   {item.title}
                 </h3>
 

@@ -11,32 +11,32 @@ export default function Hero() {
       className="relative overflow-hidden pt-8 pb-20 sm:pt-14 sm:pb-28 lg:pt-20 lg:pb-32 bg-white bg-radial-gradient"
     >
       {/* Background Decorative Gradients & Mesh */}
-      <div className="absolute top-0 inset-x-0 h-96 bg-gradient-to-b from-blue-50/70 via-white/20 to-transparent pointer-events-none" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gradient-to-tr from-[#0B4DFF]/10 via-[#1DA1FF]/10 to-transparent blur-3xl rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-0 inset-x-0 h-96 bg-linear-to-b from-blue-50/70 via-white/20 to-transparent pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-200 h-125 bg-linear-to-tr from-primary/10 via-secondary/10 to-transparent blur-3xl rounded-full pointer-events-none -z-10" />
 
       <Container className="relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Headline & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left z-10">
             {/* Top Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAF4FF] border border-[#0B4DFF]/20 text-[#0B4DFF] text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent border border-primary/20 text-primary text-xs sm:text-sm font-semibold mb-6 shadow-sm">
               <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1DA1FF] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0B4DFF]"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
               <span>Official UBS Global Mobile Application</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight text-[#0A1A44] leading-[1.1] mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight text-dark-blue leading-[1.1] mb-6">
               Trade Globally. <br className="hidden sm:inline" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0B4DFF] via-[#1DA1FF] to-[#0A1A44]">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-primary via-secondary to-dark-blue">
                 Grow Without Borders.
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg sm:text-xl text-[#0A1A44]/75 max-w-2xl font-normal leading-relaxed mb-8 sm:mb-10">
+            <p className="text-lg sm:text-xl text-dark-blue/75 max-w-2xl font-normal leading-relaxed mb-8 sm:mb-10">
               UBS Global connects buyers and sellers worldwide, helping businesses discover products,
               build international connections, manage trade, and grow beyond borders.
             </p>
@@ -66,19 +66,19 @@ export default function Hero() {
             {/* Trust Indicators below CTA */}
             <div className="mt-10 pt-6 border-t border-slate-100 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs sm:text-sm text-slate-500 font-medium">
               <div className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-[#0B4DFF]" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Direct Buyer & Seller Chat</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-[#0B4DFF]" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>International Marketplace</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-[#0B4DFF]" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Verified Cross-Border Trade</span>
@@ -89,13 +89,13 @@ export default function Hero() {
           {/* Right Column: Interactive Phone Mockup & Floating Badges */}
           <div className="lg:col-span-5 relative flex items-center justify-center">
             {/* Global Connection Graphic Elements */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none -z-0">
-              <div className="w-[360px] h-[360px] sm:w-[480px] sm:h-[480px] rounded-full border border-blue-200/50 animate-pulse-slow" />
-              <div className="w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] rounded-full border border-dashed border-[#1DA1FF]/30 animate-spin" style={{ animationDuration: "60s" }} />
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+              <div className="w-90 h-90 sm:w-120 sm:h-120 rounded-full border border-blue-200/50 animate-pulse-slow" />
+              <div className="w-70 h-70 sm:w-95 sm:h-95 rounded-full border border-dashed border-secondary/30 animate-spin" style={{ animationDuration: "60s" }} />
             </div>
 
             {/* Smartphone Mockup */}
-            <div className="relative w-[280px] sm:w-[320px] h-[580px] sm:h-[640px] bg-[#0A1A44] rounded-[48px] p-3 shadow-2xl ring-1 ring-white/20 border-4 border-[#1c2c5c]">
+            <div className="relative w-70 sm:w-80 h-145 sm:h-160 bg-dark-blue rounded-[48px] p-3 shadow-2xl ring-1 ring-white/20 border-4 border-[#1c2c5c]">
               {/* Dynamic Island / Speaker */}
               <div className="absolute top-6 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-full z-30 flex items-center justify-center">
                 <div className="w-3 h-3 rounded-full bg-slate-900 border border-slate-700/50 mr-2" />
@@ -103,7 +103,7 @@ export default function Hero() {
               </div>
 
               {/* Screen Content */}
-              <div className="relative w-full h-full bg-[#07122e] rounded-[40px] overflow-hidden flex flex-col justify-between p-5 pt-12 text-white">
+              <div className="relative w-full h-full bg-brand-dark rounded-[40px] overflow-hidden flex flex-col justify-between p-5 pt-12 text-white">
                 {/* Screen Header */}
                 <div className="flex items-center justify-between border-b border-white/10 pb-3">
                   <div className="flex items-center gap-2">
@@ -120,7 +120,7 @@ export default function Hero() {
                       <div className="text-[10px] text-blue-300">Import & Export</div>
                     </div>
                   </div>
-                  <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-[#0B4DFF]/40 text-[#1DA1FF] border border-[#1DA1FF]/30">
+                  <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-primary/40 text-secondary border border-secondary/30">
                     LIVE
                   </span>
                 </div>
@@ -129,7 +129,7 @@ export default function Hero() {
                 <div className="my-auto space-y-3.5">
                   {/* Category Pill Carousel */}
                   <div className="flex items-center gap-2 overflow-hidden text-[10px]">
-                    <span className="bg-[#0B4DFF] px-2.5 py-1 rounded-full font-medium text-white shadow-sm">All Markets</span>
+                    <span className="bg-primary px-2.5 py-1 rounded-full font-medium text-white shadow-sm">All Markets</span>
                     <span className="bg-white/10 px-2.5 py-1 rounded-full text-slate-300">Oils</span>
                     <span className="bg-white/10 px-2.5 py-1 rounded-full text-slate-300">Perfumes</span>
                     <span className="bg-white/10 px-2.5 py-1 rounded-full text-slate-300">Parts</span>
@@ -144,13 +144,13 @@ export default function Hero() {
                         fill
                         className="object-cover"
                       />
-                      <div className="absolute top-2 right-2 bg-[#0A1A44]/80 backdrop-blur-sm px-2 py-0.5 rounded text-[9px] font-medium text-blue-200">
+                      <div className="absolute top-2 right-2 bg-dark-blue/80 backdrop-blur-sm px-2 py-0.5 rounded text-[9px] font-medium text-blue-200">
                         Export Ready
                       </div>
                     </div>
                     <div className="text-xs font-semibold text-white">Premium Grade Bulk Oils</div>
                     <div className="flex items-center justify-between text-[11px] mt-1">
-                      <span className="text-[#1DA1FF] font-bold">Verified Supplier</span>
+                      <span className="text-secondary font-bold">Verified Supplier</span>
                       <span className="text-emerald-400 font-medium">In Stock</span>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ export default function Hero() {
                   {/* Seller & Inquiry Mini Widget */}
                   <div className="bg-white/5 rounded-xl p-2.5 border border-white/5 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-[#0B4DFF]/30 flex items-center justify-center text-[10px] font-bold text-[#1DA1FF]">
+                      <div className="w-8 h-8 rounded-full bg-primary/30 flex items-center justify-center text-[10px] font-bold text-secondary">
                         GS
                       </div>
                       <div className="text-[11px]">
@@ -172,7 +172,7 @@ export default function Hero() {
 
                 {/* Mockup Bottom Bar */}
                 <div className="pt-3 border-t border-white/10 flex items-center justify-around text-[9px] text-slate-400">
-                  <span className="text-[#1DA1FF] font-semibold flex flex-col items-center">
+                  <span className="text-secondary font-semibold flex flex-col items-center">
                     <svg className="w-4 h-4 mb-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                     </svg>
@@ -201,41 +201,41 @@ export default function Hero() {
             </div>
 
             {/* Floating Card 1: Global Marketplace */}
-            <div className="absolute -top-4 -left-4 sm:-left-12 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-blue-100 hidden sm:flex items-center gap-3 animate-float max-w-[210px] z-20">
-              <div className="w-10 h-10 rounded-xl bg-[#EAF4FF] text-[#0B4DFF] flex items-center justify-center shrink-0">
+            <div className="absolute -top-4 -left-4 sm:-left-12 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-blue-100 hidden sm:flex items-center gap-3 animate-float max-w-52.5 z-20">
+              <div className="w-10 h-10 rounded-xl bg-accent text-primary flex items-center justify-center shrink-0">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <div>
-                <div className="text-xs font-bold text-[#0A1A44]">GLOBAL MARKETPLACE</div>
-                <div className="text-[11px] text-[#0B4DFF] font-medium">Connect Worldwide</div>
+                <div className="text-xs font-bold text-dark-blue">GLOBAL MARKETPLACE</div>
+                <div className="text-[11px] text-primary font-medium">Connect Worldwide</div>
               </div>
             </div>
 
             {/* Floating Card 2: Buy & Sell */}
-            <div className="absolute top-1/3 -right-4 sm:-right-10 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-blue-100 hidden sm:flex items-center gap-3 animate-float-delayed max-w-[210px] z-20">
-              <div className="w-10 h-10 rounded-xl bg-[#EAF4FF] text-[#1DA1FF] flex items-center justify-center shrink-0">
+            <div className="absolute top-1/3 -right-4 sm:-right-10 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-blue-100 hidden sm:flex items-center gap-3 animate-float-delayed max-w-52.5 z-20">
+              <div className="w-10 h-10 rounded-xl bg-accent text-secondary flex items-center justify-center shrink-0">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                 </svg>
               </div>
               <div>
-                <div className="text-xs font-bold text-[#0A1A44]">BUY & SELL</div>
-                <div className="text-[11px] text-[#0B4DFF] font-medium">International Trade</div>
+                <div className="text-xs font-bold text-dark-blue">BUY & SELL</div>
+                <div className="text-[11px] text-primary font-medium">International Trade</div>
               </div>
             </div>
 
             {/* Floating Card 3: Secure Communication */}
-            <div className="absolute -bottom-6 -left-2 sm:-left-8 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-blue-100 hidden sm:flex items-center gap-3 animate-float max-w-[220px] z-20">
+            <div className="absolute -bottom-6 -left-2 sm:-left-8 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-blue-100 hidden sm:flex items-center gap-3 animate-float max-w-55 z-20">
               <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
               <div>
-                <div className="text-xs font-bold text-[#0A1A44]">SECURE CHAT</div>
-                <div className="text-[11px] text-[#0B4DFF] font-medium">Connect With Confidence</div>
+                <div className="text-xs font-bold text-dark-blue">SECURE CHAT</div>
+                <div className="text-[11px] text-primary font-medium">Connect With Confidence</div>
               </div>
             </div>
           </div>
